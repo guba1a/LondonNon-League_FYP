@@ -7,15 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.guba1a.londonnon_league.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class About extends Fragment {
 
 
     public About() {
-        // Required empty public constructor
+
     }
 
 

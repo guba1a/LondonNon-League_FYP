@@ -3,11 +3,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".About">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="About" />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title"
+                android:textColor="@color/black"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/about_devs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_devs"
+                android:layout_below="@id/about_title"
+                android:textColor="@color/black"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/about_name_daniel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_name_daniel"
+                android:layout_below="@id/about_devs"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/about_name_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_name_description"
+                android:textColor="@color/black"
+                android:layout_below="@+id/about_name_daniel"
+                android:layout_alignParentStart="true"
+                android:textStyle="normal|bold"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/about_name_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/about_name_version"
+                android:layout_below="@+id/about_name_descriptioninfo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/about_name_versionnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_name_versionnumber"
+                android:textColor="@color/black"
+                android:layout_below="@+id/about_name_version"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/about_name_descriptioninfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_name_descriptioninfo"
+                android:textColor="@color/black"
+                android:layout_below="@+id/about_name_description"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true" />
+
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>
