@@ -27,4 +27,11 @@
     <string name="about_name_version">Version Number:</string>
     <string name="about_name_versionnumber">1.0</string>
 
+    <!-- Email -->
+    <string name="contact_form">Contact Us</string>
+    <string name="contact_form_name">Your Name</string>
+    <string name="contact_form_subject">Subject</string>
+    <string name="contact_form_message">Message</string>
+    <string name="contact_form_button">Send Email</string>
+
 </resources>
